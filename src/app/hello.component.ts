@@ -1,26 +1,22 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-interface Rectangle {
-  x: number;
-  y: number;
-}
-
-// type Rectangle = {
+// Merge interfaces is possibly
+// interface Rectangle {
 //   x: number;
+// }
+
+// interface Rectangle {
 //   y: number;
 // }
 
-// type myName = string;
+// Merge types is not posibly
+// type Rectangle  = {
+//   x: number
+// };
 
-// interface Rectangle {
-//   (x: number, y: number) :number
-// }
-
-// type Rectangle = (x: number, y: number) => number;
-
-// interface Triangle extends Rectangle {
-//   z: number;
-// }
+// type Rectangle = {
+//   y: number
+// };
 
 type Triangle = Rectangle & { z: number };
 
