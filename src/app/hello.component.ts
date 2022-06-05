@@ -18,9 +18,9 @@ interface Rectangle {
 
 // type Rectangle = (x: number, y: number) => number;
 
-interface Triangle extends Rectangle {
-  z: number;
-}
+// interface Triangle extends Rectangle {
+//   z: number;
+// }
 
 @Component({
   selector: 'hello',
