@@ -22,6 +22,8 @@ interface Rectangle {
 //   z: number;
 // }
 
+type Triangle = Rectangle & { z: number };
+
 @Component({
   selector: 'hello',
   template: `<h1>Hello {{name}}!</h1>`,
@@ -31,10 +33,9 @@ export class HelloComponent implements OnInit {
   @Input() name: string;
 
   ngOnInit(): void {
-    let myRectangle: Rectangle;
-
-    myRectangle = (x: number, y: number) => {
-      return x * y;
-    };
+    // let myRectangle: Rectangle;
+    // myRectangle = (x: number, y: number) => {
+    //   return x * y;
+    // };
   }
 }
